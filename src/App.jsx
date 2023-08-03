@@ -7,15 +7,16 @@ function App() {
 
   const [notes, setNotes] = useState([]);
 
-  const onAdd = (note) => {
-    setNotes([...notes, note])
-  }
+  const addNote = (note) => {
+    setNotes([...notes, note]);
+  };
+
 
   return (
     <div>
       <h1>Not Defteri Uygulaması</h1>
-      <NoteForm onSubmit={onAdd} />
-      <NoteList />
+      <NoteForm onSubmit={addNote} />
+      <NoteList notes={notes} />
     </div>
   )
 }

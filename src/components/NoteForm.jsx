@@ -16,8 +16,12 @@ function NoteForm({ onSubmit }) {
 
     return (
         <form onSubmit={handleSubmit}>
-            <input type='text' value={title} placeholder='Title' onChange={(e) => e.target.value} />
-            <textarea placeholder='Write Here...' value={content} onChange={(e) => e.target.value} />
+            <input type='text' value={title} placeholder='Title' onChange={(e) => setTitle(e.target.value)} />
+            <br />
+            <br />
+            <textarea placeholder='Write Here...' value={content} onChange={(e) => setContent(e.target.value)} />
+            <br />
+            <br />
             <button type='submit'>Add</button>
         </form>
     )

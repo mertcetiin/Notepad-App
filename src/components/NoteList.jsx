@@ -1,8 +1,15 @@
 import React from 'react'
 
-function NoteList() {
+function NoteList({ notes }) {
     return (
-        <div>NoteList</div>
+        <div>
+            {notes.map((note, id) => (
+                <div key={id}>
+                    <h3>{note.title}</h3>
+                    <p>{note.content}</p>
+                </div>
+            ))}
+        </div>
     )
 }
 
