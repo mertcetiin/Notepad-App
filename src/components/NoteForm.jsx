@@ -17,16 +17,16 @@ function NoteForm({ onSubmit }) {
         <form onSubmit={handleSubmit} className="note-form">
             <input
                 type="text"
-                placeholder="Başlık"
+                placeholder="Title"
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
             />
             <textarea
-                placeholder="Notunuzu buraya yazın..."
+                placeholder="Write here..."
                 value={content}
                 onChange={(e) => setContent(e.target.value)}
             />
-            <button type="submit">Ekle</button>
+            <button type="submit">Add</button>
         </form>
     );
 }

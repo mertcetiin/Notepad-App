@@ -7,7 +7,7 @@ function NoteList({ notes, onDelete }) {
                 <div key={index} className="note-item">
                     <h3>{note.title}</h3>
                     <p>{note.content}</p>
-                    <button onClick={() => onDelete(index)}>Sil</button>
+                    <button onClick={() => onDelete(index)}>Clear</button>
                 </div>
             ))}
         </div>
